@@ -1,11 +1,18 @@
 # Pathological Voice Analysis using Mel Filterbank Magnitudes
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Speech Biomarkers](https://img.shields.io/badge/Domain-Speech%20Biomarkers-purple)
+![Method](https://img.shields.io/badge/Method-Threshold%20Based-orange)
+![Paper](https://img.shields.io/badge/Paper-CISTI_2023-red)
+![Status](https://img.shields.io/badge/Status-Completed-green)
+
 This repository contains the code and data associated with the paper:
 
 **"Bandas espectrais de energia para discriminação de patologias laríngeas em sinais de fala"**
-> *(Spectral energy bands for laryngeal pathologies discrimination in speech signals)*
-> B. Rodrigues, H. Cordeiro, G. Marques — *18th Iberian Conference on Information Systems and Technologies (CISTI)*, Aveiro, Portugal, June 2023.
-> DOI: [10.23919/CISTI58278.2023.10212052](https://doi.org/10.23919/CISTI58278.2023.10212052)
+> (Spectral energy bands for laryngeal pathologies discrimination in speech signals)  
+> B. Rodrigues, H. Cordeiro, G. Marques  
+> 18th Iberian Conference on Information Systems and Technologies (CISTI), Aveiro, Portugal, June 2023.  
+> DOI: https://doi.org/10.23919/CISTI58278.2023.10212052
 
 The work presents a simple threshold-based method to discriminate between healthy and pathological voices, using Mel Filterbank Magnitudes (MFBM) computed from sustained vowel /a/ recordings.
 
@@ -160,7 +167,7 @@ If you use this code or data in your research, please cite:
 ```bibtex
 @inproceedings{rodrigues2023,
   author    = {Rodrigues, Bruno and Cordeiro, Hugo and Marques, Gon{\c{c}}alo},
-  title     = {Bandas espectrais de energia para discrimina{\c{c}}{\~a}o de patologias lar{\'i}ngeas em sinais de fala},
+  title     = {Bandas espectrais de energia para discriminação de patologias laríngeas em sinais de fala},
   booktitle = {18th Iberian Conference on Information Systems and Technologies (CISTI)},
   year      = {2023},
   month     = {June},

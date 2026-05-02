@@ -106,10 +106,10 @@ If you have access to the audio files, notebook `01_MFBM_extraction.ipynb` shows
 
 The analysis identified two frequency bands as the most discriminative across all three classification tasks:
 
-- **Band 3 (147–231 Hz):** tipically captures the fundamental frequency or its first harmonic
-- **Band 8 (663–799 Hz):** corresponds to the first formant of the sustained vowel /a/
+- **Band 3 (108–275 Hz):** tipically captures the fundamental frequency and/or its first harmonic
+- **Band 8 (603–872 Hz):** corresponds to the first formant of the sustained vowel /a/
 
-Notably, the standard deviation of Band 3 alone proved sufficient to discriminate between all class pairs, suggesting that **vocal instability in the 147–231 Hz range 
+Notably, the standard deviation of Band 3 alone proved sufficient to discriminate between all class pairs, suggesting that **vocal instability in the 108–275 Hz range 
 is a consistent marker of laryngeal pathology**, regardless of its origin (physiological or neuromuscular).
 
 ---
@@ -126,6 +126,14 @@ is a consistent marker of laryngeal pathology**, regardless of its origin (physi
 
 The published article refers to the extracted features as "band energies". The implementation uses **filterbank magnitudes** (not energies). 
 This discrepancy reflects an evolution of the codebase during the research, and the results reported in the paper were obtained using magnitudes, as implemented here.
+
+### Note on filterbank representation
+
+The published article includes a filterbank representation with an **incorrect definition**, assuming a 20% overlap between adjacent filters. The band limits reported in the paper were derived from this incorrect representation.
+
+However, both the original implementation used to obtain the results and the implementation provided in this repository use a Mel filterbank with 50% overlap between filters. Therefore, **the results themselves are based on the correct filterbank configuration**.
+
+This discrepancy originates from the use of an incorrect illustrative filterbank when preparing the article, which led to inconsistencies in the reported band definitions, while the underlying computations remained correct.
 
 ---
 

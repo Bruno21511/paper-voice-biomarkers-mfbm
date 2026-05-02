@@ -21,8 +21,8 @@ The work presents a simple threshold-based method to discriminate between health
 ## Overview
 
 This work addresses two questions: <br>
-Can Mel Filterbank Magnitudes discriminate between healthy and pathological voice classes? <br>And between pathologies?<br>
-And if so, which mel frequency bands carry the most discriminative information? <br>
+Can Mel Filterbank Magnitudes discriminate between healthy and pathological voice classes, and between pathologies?<br>
+And if so, which mel frequency bands carry the most discriminative information? <br><br>
 The results show that a simple threshold applied to a single Mel band is sufficient to achieve the accuracies below.
 
 Three binary classification tasks are addressed:

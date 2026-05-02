@@ -106,7 +106,7 @@ If you have access to the audio files, notebook `01_MFBM_extraction.ipynb` shows
 
 The analysis identified two frequency bands as the most discriminative across all three classification tasks:
 
-- **Band 3 (147–231 Hz):** captures the fundamental frequency and its first harmonic
+- **Band 3 (147–231 Hz):** tipically captures the fundamental frequency or its first harmonic
 - **Band 8 (663–799 Hz):** corresponds to the first formant of the sustained vowel /a/
 
 Notably, the standard deviation of Band 3 alone proved sufficient to discriminate between all class pairs, suggesting that **vocal instability in the 147–231 Hz range 

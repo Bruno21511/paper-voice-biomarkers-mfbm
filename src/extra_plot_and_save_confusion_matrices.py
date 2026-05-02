@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from pathlib import Path
 
-def plot_and_save_confusion_matrices(results_dict,
+def extra_plot_and_save_confusion_matrices(results_dict,
                                      class_names_dict,
                                      output_dir="../results/figures"):
     """

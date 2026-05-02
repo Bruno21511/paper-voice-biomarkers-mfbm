@@ -8,8 +8,8 @@
 
 This repository contains the code and data associated with the paper:
 
-**"Bandas espectrais de energia para discriminação de patologias laríngeas em sinais de fala"**
-> (Spectral energy bands for laryngeal pathologies discrimination in speech signals)  
+> **"Bandas espectrais de energia para discriminação de patologias laríngeas em sinais de fala"**<br>
+> <i>Spectral energy bands for laryngeal pathologies discrimination in speech signals</i>  
 > B. Rodrigues, H. Cordeiro, G. Marques  
 > 18th Iberian Conference on Information Systems and Technologies (CISTI), Aveiro, Portugal, June 2023.  
 > DOI: https://doi.org/10.23919/CISTI58278.2023.10212052
@@ -20,9 +20,9 @@ The work presents a simple threshold-based method to discriminate between health
 
 ## Overview
 
-This work addresses two questions: 
-Can Mel Filterbank Magnitudes discriminate between healthy and pathological voice classes? And between pathologies?
-And if so, which mel frequency bands carry the most discriminative information? 
+This work addresses two questions: <br>
+Can Mel Filterbank Magnitudes discriminate between healthy and pathological voice classes? <br>And between pathologies?<br>
+And if so, which mel frequency bands carry the most discriminative information? <br>
 The results show that a simple threshold applied to a single Mel band is sufficient to achieve the accuracies below.
 
 Three binary classification tasks are addressed:
@@ -33,7 +33,10 @@ Three binary classification tasks are addressed:
 | Control vs. Neuromuscular pathologies | 96.55% | 96.30% |
 | Physiological vs. Neuromuscular pathologies | 93.48% | 88.0% |
 
-Classification is performed without automatic classifiers — a single decision threshold is applied per task, selected to maximise the F1-Score.
+Classification is performed without automatic classifiers. A single decision threshold is applied per task, selected to maximise the F1-score.<br>
+The figure below shows the distribution of the standard deviation of MFBM (Band 3) across all speakers. Dashed lines indicate the optimal thresholds obtained for each pairwise classification task.
+
+<img src="results/figures/06_3_classes.png" width="600">
 
 ---
 
@@ -63,10 +66,8 @@ Classification is performed without automatic classifiers — a single decision 
 │   ├── find_most_discriminative_bands.py
 │   ├── plot_band_discriminability.py
 │   ├── build_X_y.py
-│   └── threshold_f1_search.py
+│   ├── threshold_f1_search.py
 │   └── evaluate_threshold_model.py
-│   └── save_metrics_csv.py
-│   └── plot_and_save_confusion_matrices.py
 │
 ├── .gitignore
 ├── LICENSE

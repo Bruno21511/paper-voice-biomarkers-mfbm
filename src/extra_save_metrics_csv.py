@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-def save_metrics_csv(results_dict, output_path="../results/metrics/metrics.csv"):
+def extra_save_metrics_csv(results_dict, output_path="../results/metrics/metrics.csv"):
     """
     Saves metrics and confusion matrix components to CSV.
 

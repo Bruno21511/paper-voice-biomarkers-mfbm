@@ -79,10 +79,10 @@ The figure below shows the distribution of the standard deviation of MFBM (Band 
 
 ## Data
 
-### Audio Corpus (myUSP)
+### Audio Corpus (USP)
 
 The audio signals used in this work belong to the **Universidade de São Paulo (USP)** voice corpus, previously used in [1][2]. 
-The corpus contains sustained vowel /a/ recordings from 61 speakers:
+The corpus contains sustained vowel phonation recordings from 61 speakers. Only the suatined /a/ audio files were used:
 
 | Class | Description | N |
 |-------|-------------|---|

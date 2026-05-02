@@ -127,7 +127,7 @@ is a consistent marker of laryngeal pathology**, regardless of its origin (physi
 The published article refers to the extracted features as "band energies". The implementation uses **filterbank magnitudes** (not energies). 
 This discrepancy reflects an evolution of the codebase during the research, and the results reported in the paper were obtained using magnitudes, as implemented here.
 
-### Note on filterbank representation
+### Note on filterbank representation and bands definition
 
 The published article includes a filterbank representation with an **incorrect definition**, assuming a 20% overlap between adjacent filters. The band limits reported in the paper were derived from this incorrect representation.
 
